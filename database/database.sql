@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS deno;
+
+USE deno;
+
+CREATE TABLE IF NOT EXISTS user (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    country VARCHAR(50) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(id)
+)ENGINE=InnoDb;
+
+INSERT INTO user(name, country) VALUES('Ryan Tay','USA'), ('Joe Macmillan', 'USA');
