@@ -11,7 +11,7 @@ router.get("/", (ctx) => {
 }).get("/users", getAllUsers)
   .get("/users/:id", getUser)
   .post("/users", createUser)
-  .put("/users", updateUser)
-  .delete("/users", deleteUser);
+  .put("/users/:id", updateUser)
+  .delete("/users/:id", deleteUser);
 
 export default router;
